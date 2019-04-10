@@ -1,4 +1,4 @@
-def my_select(collection)
+def my_select(array)
   i = 0 
   nuarray = []
   while i < array.length 
