@@ -1,9 +1,12 @@
-def my_select(array)
-  i = 0 
-  nuarray = []
+
+def my_select(array) 
+  i =0 
+  nuarray = [] 
   while i < array.length 
-    nuarray << yield(array[i])
-    i += 1 
+    if (yield(array[i]))
+      nuarray << array[i] 
     end 
-  array
-end
+    i += 1 
+  end 
+  nuarray 
+end 
